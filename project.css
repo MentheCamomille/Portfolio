@@ -162,6 +162,28 @@ body{
     margin-left: 250px; /* Assurez-vous que la marge correspond à la largeur de la sidebar */
 }
 
+/* Code CSS pour arrondir les coins des images et espacer les miniatures */
+.project-thumbnail {
+    margin: 5px; /* Marge de 10 pixels autour de chaque miniature (ajustez la valeur selon l'espace souhaité) */
+    padding: 10px; /* Espacement interne pour plus de clarté */
+    border-radius: 10px; /* Ajustez la valeur selon le degré d'arrondi souhaité */
+}
+
+.project-thumbnail img {
+    width: 100%; /* Remplissez la largeur du conteneur parent */
+    border-radius: 10px; /* Ajustez la valeur selon le degré d'arrondi souhaité */
+}
+
+
+.project-thumbnail h3 {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.project-thumbnail p {
+    color: #6c6c6c;
+    margin-top: 5px;
+}
 
 .side-bar i {
     font-size: 24px;
