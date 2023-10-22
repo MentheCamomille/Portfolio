@@ -21,7 +21,7 @@ function performSearch() {
         case "projects":
         case "projet":
         case "projets":
-            window.location.href = "project.html";
+            window.location.href = "loading.html";
             break;
 
         case "about me":
