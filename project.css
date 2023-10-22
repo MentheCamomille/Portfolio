@@ -154,6 +154,11 @@ body{
     width: 250px; /* Largeur souhaitée de la sidebar */
 }
 
+.side-bar p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 .video-container {
     transition: margin-left 0.3s ease;
 }
