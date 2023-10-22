@@ -145,7 +145,23 @@ body{
     height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
+    width: 0;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
 }
+
+.side-bar.open {
+    width: 250px; /* Largeur souhaitée de la sidebar */
+}
+
+.video-container {
+    transition: margin-left 0.3s ease;
+}
+
+.video-container.shifted {
+    margin-left: 250px; /* Assurez-vous que la marge correspond à la largeur de la sidebar */
+}
+
 
 .side-bar i {
     font-size: 24px;
