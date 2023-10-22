@@ -3,43 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="logoytb.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="project.css">
-    <title>ShayTube</title>
+    <title>Shaytune</title>
 </head>
 <body>
-    <header>
-        <!-- Barre de navigation similaire à YouTube -->
-        <nav class="navbar">
-            <div class="logo">
-                <img src="shaytube_2.png" alt="YouTube Logo">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Rechercher">
-                <button type="button">Rechercher</button>
-            </div>
-            <div class="user-info">
-                <img src="logogoogle.png" alt="User Profile">
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <!-- Zone de contenu de la page des projets -->
-        <div class="project-list">
-            <!-- Liste de projets -->
-            <div class="project">
-                <img src="project-thumbnail-1.png" alt="Projet 1">
-                <h3>Nom du Projet 1</h3>
-                <p>Description du projet 1.</p>
-            </div>
-            <div class="project">
-                <img src="project-thumbnail-2.png" alt="Projet 2">
-                <h3>Nom du Projet 2</h3>
-                <p>Description du projet 2.</p>
-            </div>
-            <!-- Ajoutez plus de projets ici -->
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </main>
+        <img src="shaytube_2.png" alt="YouTube Logo" class="logo-image">
+
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><i class='bx bx-search' ></i></button>
+        </div>
+        <div class="user-options">
+            <div class="icon">
+            <i class='bx bx-video-plus' ></i>
+            <i class='bx bxs-grid' ></i>
+            <i class='bx bx-bell'></i>
+        </div>
+            <div class="user-dp">
+                <img src="logogoogle.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div class="side-bar">
+        <a href="#" class="links active"><i class='bx bx-home-alt'></i>home</a>
+        <a href="#" class="links"><i class='bx bx-compass' ></i>explore</a>
+        <a href="#" class="links"><i class='bx bxs-videos' ></i>subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><i class='bx bx-library' ></i>library</a>
+        <a href="#" class="links"><i class='bx bx-history' ></i>history</a>
+        <a href="#" class="links"><i class='bx bx-video' ></i>your video</a>
+        <a href="#" class="links"><i class='bx bx-time-five' ></i>watch leater</a>
+        <a href="#" class="links"><i class='bx bx-like' ></i>like video</a>
+        <a href="#" class="links"><i class='bx bxs-chevron-down'></i>show more</a>
+    </div>
+
+    <!-- filters -->
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">Blender</button>
+        <button class="filter-options">Figma</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">Crochet</button>
+    </div>
+
+    <!-- videos -->
+    <div class="video-container">
+        <!-- <div class="video">
+            <img src="img/profile-pic.png" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/profile-pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
+                    <p class="channel-name">modern web</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="project.js"></script>
+    
 </body>
 </html>
