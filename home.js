@@ -1,56 +1,51 @@
+// Sélectionnez le bouton de recherche et le champ de texte
 const searchButton = document.getElementById("search-button");
+const searchInput = document.getElementById("search-input");
 
 // Écoutez le clic sur le bouton de recherche
-searchButton.addEventListener("click", function () {
-    const searchInput = document.getElementById("search-input").value.toLowerCase();
-    
-    
-    switch (searchInput) {
+searchButton.addEventListener("click", performSearch);
+
+// Écoutez l'événement "keydown" sur le champ de texte
+searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        performSearch();
+    }
+});
+
+// Fonction pour effectuer la recherche (à personnaliser selon vos besoins)
+function performSearch() {
+    const searchInputValue = searchInput.value.toLowerCase();
+
+    switch (searchInputValue) {
         case "project":
-            case "projects":
-            case "Project":
-            case "Projects":
-            case "Projet":
-            case "projet":
-            case "projets":
-            case "Projets":
-            // Redirigez l'utilisateur vers la page des projets
+        case "projects":
+        case "projet":
+        case "projets":
             window.location.href = "project.html";
             break;
 
-            case "about me":
-                case "aboutme":
-                case "About Me":
-                case "about Me":
-            // Redirigez l'utilisateur vers la page "About Me"
+        case "about me":
+        case "aboutme":
             window.location.href = "about.html";
             break;
 
-            case "compétences":
-                case "compétence":
-                case "Compétences":
-                case "Compétence":
-                case "skills":
-                case "skill":
-                case "Skills":
-                case "Skill":
-            // Redirigez l'utilisateur vers la page "Skills"
+        case "compétences":
+        case "competence":
+        case "skills":
+        case "skill":
             window.location.href = "skills.html";
             break;
 
         case "contact":
         case "contacts":
-        case "Contact":
-        case "Contacts":
-            // Redirigez l'utilisateur vers la page des contacts
             window.location.href = "contact.html";
             break;
 
         default:
-            // Redirigez l'utilisateur vers une page par défaut si le terme de recherche n'est pas valide
             window.location.href = "default.html";
     }
-});
+}
+
 
 
 // Sélectionnez le bouton de personnalisation
@@ -98,3 +93,4 @@ userLogo.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
     contactPopup.classList.remove("show"); // Supprime la classe "show" pour cacher la pop-up avec une transition
 });
+
