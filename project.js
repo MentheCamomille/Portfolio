@@ -11,13 +11,13 @@ toggleBtn.addEventListener('click', function () {
 const projects = [
     {
         title: "Chat",
-        imageUrl: "chat.png",
+        imageUrl: "img/chat.png",
         description: "Description du projet 1",
         // Autres informations du projet
     },
     {
         title: "Random Color",
-        imageUrl: "color.png",
+        imageUrl: "img/color.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
@@ -29,13 +29,13 @@ const projects = [
     },
     {
         title: "Aminy",
-        imageUrl: "render3.png",
+        imageUrl: "img/render3.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
     {
         title: "Tic Tac Toe",
-        imageUrl: "tic.png",
+        imageUrl: "img/tic.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
@@ -47,25 +47,25 @@ const projects = [
     },
     {
         title: "Space Attack",
-        imageUrl: "space.png",
+        imageUrl: "img/space.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
     {
         title: "Dashboard",
-        imageUrl: "Dashboard.png",
+        imageUrl: "img/Dashboard.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
     {
         title: "3D plan hospital",
-        imageUrl: "gnn2.jpg",
+        imageUrl: "img/gnn2.jpg",
         description: "Description du projet 2",
         // Autres informations du projet
     },
     {
         title: "Maquettes Figma",
-        imageUrl: "image2.jpg",
+        imageUrl: "img/image2.jpg",
         description: "Description du projet 2",
         // Autres informations du projet
     },
