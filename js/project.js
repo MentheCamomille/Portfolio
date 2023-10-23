@@ -131,4 +131,3 @@ projects.forEach((project) => {
 
     videoContainer.appendChild(projectThumbnail);
 });
-
