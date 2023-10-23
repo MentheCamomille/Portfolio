@@ -44,6 +44,7 @@ const projects = [
         title: "Aminy",
         imageUrl: "img/render3.png",
         description: "Description du projet 2",
+        videoUrl: "aminy.html"
         // Autres informations du projet
     },
     {
@@ -112,5 +113,20 @@ function displayProjectThumbnails(projects) {
     });
 }
 
-// Appel de la fonction pour afficher les miniatures d'images de projets
-displayProjectThumbnails(projects);
+projects.forEach((project) => {
+    const projectTitle = project.title;
+    const projectImageUrl = project.imageUrl;
+    const projectDescription = project.description;
+
+    const projectThumbnail = document.createElement("div");
+    projectThumbnail.className = "project-thumbnail";
+    projectThumbnail.innerHTML = `
+        <a class="project-link" href="${project.videoUrl}">
+            <img src="${projectImageUrl}" alt="${projectTitle}">
+            <h3>${projectTitle}</h3>
+            <p>${projectDescription}</p>
+        </a>
+    `;
+
+    videoContainer.appendChild(projectThumbnail);
+});

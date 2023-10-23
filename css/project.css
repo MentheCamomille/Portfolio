@@ -325,3 +325,8 @@ body{
     margin: 2px 0;
     color: #979797;
 }
+
+.project-link {
+    color: #242424;
+    text-decoration: none;
+}
