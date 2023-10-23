@@ -268,8 +268,17 @@ body{
 }
 
 .video-details h1 {
+    margin-bottom: 10px;
     font-size: 28px;
     font-weight: bold;}
+
+.video-details p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
 
 .video-meta {
     display: flex;
@@ -281,24 +290,77 @@ body{
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    margin-top: 12px;
+    margin-left: 10px;
 }
 
 .video-actions {
     display: flex;
+    margin-left: 380px;
 }
 
 .like-button,
 .share-button {
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px 12px;
     margin-right: 10px;
     background: #fff; /* Couleur de fond de vos boutons */
     border: 1px solid #ccc; /* Bordure de vos boutons */
-    border-radius: 5px;
+    border-radius: 20px; /* Ajoutez une grande valeur de rayon pour obtenir des coins arrondis */
     cursor: pointer;
+    text-decoration: none; /* Supprime la soulignement du lien pour le cas où les boutons sont des liens */
+    display: inline-block; /* Pour les rendre en ligne, afin qu'ils ne prennent que l'espace nécessaire */
+    transition: background 0.3s; /* Une transition douce pour le changement de couleur au survol */
+}
+
+.like-button i,
+.share-button i{
+    margin-right: 7px;
 }
 
 /* Style pour les boutons au survol */
 .like-button:hover,
 .share-button:hover {
     background: #f0f0f0; /* Couleur de fond au survol */
+}
+
+.other-projects {
+    position: absolute;
+    top: 50px;
+    right: 70px; /* Ajustez cette valeur pour définir la distance entre la colonne et le bord droit de la page */
+    width: 400px; /* Ajustez la largeur de la colonne selon vos préférences */
+    border: none;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-row-gap: 10px;
+}
+
+.other-projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.project-thumbnail {
+    display: flex;
+
+}
+
+.project-thumbnail img {
+    width: 170px; /* Ajustez la taille de l'image selon vos préférences */
+    height: 110px; /* Ajustez la taille de l'image selon vos préférences */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.project-thumbnail h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-left: 5px;
 }

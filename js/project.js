@@ -55,7 +55,7 @@ const projects = [
         // Autres informations du projet
     },
     {
-        title: "Website TAC.cie",
+        title: "Website TAC.Cie",
         imageUrl: "img/tac.png",
         description: "Description du projet 2",
         // Autres informations du projet
