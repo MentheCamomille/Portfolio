@@ -133,6 +133,10 @@ body{
     font-size: 24px;
     margin-left: 12px;
 }
+/* Container pour la barre latérale et les filtres */
+.container {
+    position: relative;
+}
 
 /* side-bar */
 
@@ -145,6 +149,7 @@ body{
     background: #fff;
     transition: width 0.3s ease;
     overflow-x: hidden;
+    z-index: 1;
     /* Ajoutez ces propriétés pour masquer la barre de défilement */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
@@ -232,10 +237,10 @@ body{
 /* filter */
 
 .filters{
-    position: fixed;
+    position:fixed;
     left: 250px;
     top: 60px;
-    width: calc(100% - 250px);
+    width: calc(100% - 150px);
     height: 60px;
     background: #fff;
     border-top: 1px solid #dbdbdb;
