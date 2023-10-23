@@ -32,6 +32,7 @@ const projects = [
         title: "Random Color",
         imageUrl: "img/color.png",
         description: "Description du projet 2",
+        videoUrl: "color.html"
         // Autres informations du projet
     },
     {

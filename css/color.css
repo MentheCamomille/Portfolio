@@ -204,24 +204,6 @@ body{
     margin: 20px 0;
 }
 
-/* video */
-
-.video-container{
-    width: calc(100% - 250px);
-    margin-top: 120px;
-    margin-left: 250px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-gap: 20px 5px;
-    overflow-x: hidden;
-}
-
-.video{
-    min-height: 250px;
-    height: auto;
-}
-
 .thumbnail{
     width: 100%;
     height: 150px;
@@ -254,4 +236,69 @@ body{
     font-size: 14px;
     margin: 2px 0;
     color: #979797;
+}
+
+/* video.css */
+.video-container {
+    margin-top: 30px;
+    width: 937px; /* Ajustez cette valeur en fonction de votre mise en page */
+    height: 527px; /* Hauteur maximale en fonction de la barre de navigation */
+    position: relative;
+    top: 80px;
+    left: 90px;
+    overflow: hidden; /* Masquer la barre de défilement */
+}
+
+.video-container iframe {
+    border-radius: 20px;
+    width: 937px; /* Ajustez cette valeur en fonction de votre mise en page */
+    height: 527px;
+    border: none;
+}
+
+.video-container iframe::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, and Opera */
+}
+
+
+/* Ajoutez ces styles à votre feuille de style CSS */
+.video-details {
+    margin-top: 110px;
+    margin-left: 105px;
+}
+
+.video-details h1 {
+    font-size: 28px;
+    font-weight: bold;}
+
+.video-meta {
+    display: flex;
+    align-items: center;
+}
+
+.video-meta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.video-actions {
+    display: flex;
+}
+
+.like-button,
+.share-button {
+    padding: 10px;
+    margin-right: 10px;
+    background: #fff; /* Couleur de fond de vos boutons */
+    border: 1px solid #ccc; /* Bordure de vos boutons */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style pour les boutons au survol */
+.like-button:hover,
+.share-button:hover {
+    background: #f0f0f0; /* Couleur de fond au survol */
 }
