@@ -143,7 +143,6 @@ body{
     width: 0;
     height: calc(100vh - 60px);
     background: #fff;
-    padding-right: 10px;
     transition: width 0.3s ease;
     overflow-x: hidden;
     /* Ajoutez ces propriétés pour masquer la barre de défilement */
