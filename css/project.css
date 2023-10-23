@@ -140,12 +140,19 @@ body{
     position: fixed;
     top: 60px;
     left: 0;
-    width: 0; /* Cache initialement la sidebar */
+    width: 0;
     height: calc(100vh - 60px);
     background: #fff;
     padding-right: 10px;
     transition: width 0.3s ease;
     overflow-x: hidden;
+    /* Ajoutez ces propriétés pour masquer la barre de défilement */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, and Opera */
 }
 
 .side-bar.open {
