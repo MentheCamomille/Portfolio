@@ -23,7 +23,7 @@ const projects = [
     },
     {
         title: "Hyrule Castle",
-        imageUrl: "image2.jpg",
+        imageUrl: "hyrule.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
@@ -40,8 +40,8 @@ const projects = [
         // Autres informations du projet
     },
     {
-        title: "E-commerce website",
-        imageUrl: "image2.jpg",
+        title: "Website TAC.cie",
+        imageUrl: "tac.png",
         description: "Description du projet 2",
         // Autres informations du projet
     },
@@ -65,13 +65,13 @@ const projects = [
     },
     {
         title: "Maquettes Figma",
-        imageUrl: "img/image2.jpg",
+        imageUrl: "image2.jpg",
         description: "Description du projet 2",
         // Autres informations du projet
     },
     {
         title: "Roc, Paper, Scisors",
-        imageUrl: "image2.jpg",
+        imageUrl: "rps.png",
         description: "Description du projet 2",
         // Autres informations du projet
     }
