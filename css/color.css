@@ -57,8 +57,8 @@ body{
 
 .logo-image {
     margin-left: 10px;
-    width: 150px; /* Définissez la largeur souhaitée */
-    height: auto; /* Laissez la hauteur ajuster automatiquement pour conserver les proportions de l'image */
+    width: 150px; 
+    height: auto; 
 }
 
 
@@ -68,7 +68,7 @@ body{
     max-width: 500px;
     width: 50%;
     height: 35px;
-    margin-left: auto; /* Cette ligne décale la search box vers la droite */
+    margin-left: auto; 
 }
 
 
@@ -133,6 +133,7 @@ body{
     font-size: 24px;
     margin-left: 12px;
 }
+
 /* Container pour la barre latérale et les filtres */
 .container {
     position: relative;
@@ -150,7 +151,6 @@ body{
     transition: width 0.3s ease;
     overflow-x: hidden;
     z-index: 1;
-    /* Ajoutez ces propriétés pour masquer la barre de défilement */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
 }
@@ -160,7 +160,7 @@ body{
 }
 
 .side-bar.open {
-    width: 250px; /* Largeur souhaitée de la sidebar */
+    width: 250px; 
     
 }
 
@@ -241,17 +241,17 @@ body{
 /* video.css */
 .video-container {
     margin-top: 30px;
-    width: 937px; /* Ajustez cette valeur en fonction de votre mise en page */
-    height: 527px; /* Hauteur maximale en fonction de la barre de navigation */
+    width: 937px; 
+    height: 527px; 
     position: relative;
     top: 80px;
     left: 90px;
-    overflow: hidden; /* Masquer la barre de défilement */
+    overflow: hidden;
 }
 
 .video-container iframe {
     border-radius: 20px;
-    width: 937px; /* Ajustez cette valeur en fonction de votre mise en page */
+    width: 937px;
     height: 527px;
     border: none;
 }
@@ -260,8 +260,6 @@ body{
     width: 0; /* Chrome, Safari, and Opera */
 }
 
-
-/* Ajoutez ces styles à votre feuille de style CSS */
 .video-details {
     margin-top: 110px;
     margin-left: 105px;
@@ -304,13 +302,13 @@ body{
     font-size: 16px;
     padding: 8px 12px;
     margin-right: 10px;
-    background: #fff; /* Couleur de fond de vos boutons */
-    border: 1px solid #ccc; /* Bordure de vos boutons */
-    border-radius: 20px; /* Ajoutez une grande valeur de rayon pour obtenir des coins arrondis */
+    background: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 20px; 
     cursor: pointer;
-    text-decoration: none; /* Supprime la soulignement du lien pour le cas où les boutons sont des liens */
-    display: inline-block; /* Pour les rendre en ligne, afin qu'ils ne prennent que l'espace nécessaire */
-    transition: background 0.3s; /* Une transition douce pour le changement de couleur au survol */
+    text-decoration: none;
+    display: inline-block; 
+    transition: background 0.3s; 
 }
 
 .like-button i,
@@ -318,17 +316,16 @@ body{
     margin-right: 7px;
 }
 
-/* Style pour les boutons au survol */
 .like-button:hover,
 .share-button:hover {
-    background: #f0f0f0; /* Couleur de fond au survol */
+    background: #f0f0f0;
 }
 
 .other-projects {
     position: absolute;
     top: 50px;
-    right: 70px; /* Ajustez cette valeur pour définir la distance entre la colonne et le bord droit de la page */
-    width: 400px; /* Ajustez la largeur de la colonne selon vos préférences */
+    right: 70px; 
+    width: 400px; 
     border: none;
     padding: 20px;
     display: grid;
@@ -348,8 +345,7 @@ body{
 }
 
 .project-thumbnail img {
-    width: 170px; /* Ajustez la taille de l'image selon vos préférences */
-    height: 110px; /* Ajustez la taille de l'image selon vos préférences */
+    width: 170px; 
     object-fit: cover;
     border-radius: 5px;
     margin-right: 10px;
