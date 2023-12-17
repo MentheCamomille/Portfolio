@@ -136,6 +136,7 @@ body{
 
 /* Container pour la barre latérale et les filtres */
 .container {
+    display: fixed;
     position: relative;
 }
 
@@ -240,6 +241,7 @@ body{
 
 /* video.css */
 .video-container {
+    display: fixed;
     margin-top: 30px;
     width: 937px; 
     height: 527px; 
@@ -250,6 +252,7 @@ body{
 }
 
 .video-container iframe {
+    display: fixed;
     border-radius: 20px;
     width: 937px;
     height: 527px;
@@ -360,3 +363,118 @@ body{
     margin-top: 15px;
     margin-left: 5px;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .navbar{
+      height: 80px; 
+    }
+  
+    .toggle-btn {
+      margin-right: 10px;
+    }
+  
+    .logo {
+      margin: -10px 10px 0;
+    }
+  
+    .search-box {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 10px;
+    }
+  
+    .search-bar {
+      font-size: 14px;
+    }
+  
+    .user-options {
+      margin-right: 10px;
+    }
+  
+    .video-container {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      left: 0;
+    }
+  
+    .other-projects {
+      right: 10px;
+      width: auto;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 576px) {
+    .navbar {
+      height: 80px;
+    }
+  
+    .search-box {
+      max-width: 70%;
+    }
+  
+    .search-bar {
+      font-size: 16px;
+    }
+  
+    .user-options {
+      margin-right: 20px;
+    }
+  
+    .video-container {
+      width: 70%;
+      height: auto;
+      margin-top: 30px;
+      left: 15%;
+    }
+  
+    .other-projects {
+      right: 20px;
+      width: auto;
+    }
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 992px) {
+    .navbar {
+      height: 60px;
+    }
+  
+    .toggle-btn {
+      display: none; 
+    }
+  
+    .logo {
+      margin: 0 30px 0 0;
+    }
+  
+    .search-box {
+      max-width: 500px;
+      width: 50%;
+      margin-left: auto;
+    }
+  
+    .search-bar {
+      font-size: 18px;
+    }
+  
+    .user-options {
+      margin-left: auto;
+    }
+  
+    .video-container {
+      width: 937px;
+      height: 527px;
+      margin-top: 80px;
+      left: 90px;
+    }
+  
+    .other-projects {
+      right: 70px;
+      width: 400px;
+    }
+  }
+  
